@@ -1,0 +1,22 @@
+{
+    "ServiceName": "policy-pal-service",
+    "SourceConfiguration": {
+        "CodeRepository": {
+            "RepositoryUrl": "https://github.com/pratiksha27jain-priti/policy-pal-ai",
+            "SourceCodeVersion": {
+                "Type": "BRANCH",
+                "Value": "master"
+            },
+            "CodeConfiguration": {
+                "ConfigurationSource": "API",
+                "CodeConfigurationValues": {
+                    "Runtime": "NODEJS_18",
+                    "BuildCommand": "npm install && npm run build",
+                    "StartCommand": "npm start",
+                    "Port": "8080"
+                }
+            }
+        },
+        "AutoDeploymentsEnabled": true
+    }
+}
